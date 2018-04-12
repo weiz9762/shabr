@@ -9,6 +9,8 @@ body {
     background-color: #ffdfb5;
 }
 
+.navbar { margin-bottom: 0px }
+
 p {
     font-size: 18px;
 }
