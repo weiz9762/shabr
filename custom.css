@@ -25,7 +25,12 @@
 
  .slideshow {
      height: 50%;
+     
  }
+ 
+.img-fluid {
+    width:100%;
+}
 
 
  /*#earth {*/
