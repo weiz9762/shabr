@@ -1,36 +1,36 @@
  html,
  body {
-     width: 100%;
-     height: 100%;
+  width: 100%;
+  height: 100%;
  }
 
  .text-vertical-center {
-     text-align: center;
-     vertical-align: middle;
-     display: table-cell;
-     color: black;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  color: black;
  }
 
 
  #landing {
-     display: table;
-     width: 100%;
-     min-height: 100%;
-     height: 100%;
-     background: linear-gradient( rgba(0, 0, 0, 0),
-     rgba(0, 0, 0, 0)),
-     url('img/balloon-3.jpg') no-repeat center;
-     background-size: cover;
+  display: table;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0)),
+  url('img/balloon-3.jpg') no-repeat center;
+  background-size: cover;
  }
 
  .slideshow {
-     height: 50%;
-     
+  height: 50%;
+
  }
- 
-.img-fluid {
-    width:100%;
-}
+
+ .img-fluid {
+  width: 100%;
+ }
 
 
  /*#earth {*/
@@ -52,47 +52,71 @@
  /*}*/
 
  @media(min-width: 768px) {
-     h1 {
-         font-size: 70px
-     }
-     h2 {
-         font-size: 35px
-     }
+  h1 {
+   font-size: 70px
+  }
+  h2 {
+   font-size: 35px
+  }
  }
 
  .carousel-inner {
-     margin-bottom: 50px;
+  margin-bottom: 50px;
  }
 
  .carousel-indicators {
-     bottom: -500px;
+  bottom: -150px;
  }
-
+ 
  a.carousel-control-prev,
  a.carousel-control-next {
-     bottom: -500px;
+  bottom: -500px;
  }
+ 
+ @media(max-width: 768px) {
+  .carousel-indicators {
+   bottom: -500px;
+  }
+  
+  a.carousel-control-prev,
+ a.carousel-control-next {
+  bottom: -500px;
+ }
+ }
+
+ @media(min-width: 1263px) {
+  .carousel-indicators {
+   bottom: -500px;
+  }
+  
+  a.carousel-control-prev,
+ a.carousel-control-next {
+  bottom: -500px;
+ }
+ }
+
+
 
 
  /* med+ */
 
  @media(min-width: 992px) {
-     h1 {
-         font-size: 90px
-     }
-     h2 {
-         font-size: 45px
-     }
+  h1 {
+   font-size: 90px
+  }
+  h2 {
+   font-size: 45px
+  }
  }
 
  /* lag+ */
 
  @media(min-width: 1200px) {
-     h1 {
-         font-size: 110px
-     }
-     h2 {
-         font-size: 55px
-     }
+  h1 {
+   font-size: 110px
+  }
+  h2 {
+   font-size: 55px
+  }
  }
  
