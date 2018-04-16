@@ -18,40 +18,47 @@
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe|Zeyada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe|Zeyada|Gugi" rel="stylesheet">
 
     <script src="script.js"></script>
 </head>
 
 <body>
 
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a><img class='logo navbar-brand ' src="img/hot-air-balloon-clipart.png" alt="shabr icon"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#"><img src="img/hot-air-balloon-clipart.png" width="30" class="d-inline-block align-top" alt="">
+    Skydance</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-        <nav class="nav navbar-nav navbar-right">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#landing">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#info">Info</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#o,ahes">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#info">Info</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
     </nav>
+
 
     <header id="landing">
         <div class="text-vertical-center">
@@ -61,11 +68,19 @@
         </div>
     </header>
 
+    <div id="home" >
+       
+            <h1>Fun for Everyone</h1>
+            <p>Come make a new memory with us. There's nothing else like it.</p>
+            <p>Fun for both adults and kids. All are welcome! :)</p>
+            <p>Afraid of heights? You won't be after you slow-dance with the sky.</p>
+    </div>
 
 
-    <div class="container" id="info">
+    <div class ="bg"></div>
+    <div class="container">
         <div class="row">
-            <div class="jumbotron">
+            <div class="jumbotron" id="info">
                 <h1>INFO</h1>
                 <h5> All the information you'll need!</h5>
                 <hr class="my-4">
@@ -74,17 +89,15 @@
                     we ask all our guests to call ahead for the exact meeting time.
                     <hr class="my-4">
                     <p class="lead">
-                    <strong>Weather</strong><br> High winds and/or inclement weather prevent us from flying. We ask all our guests to contact us in the early afternoon prior to their scheduled flight between
-                    12:00 noon and 2:00 p.m. to verify that the forecasted weather conditions will allow their balloon flight. 
-                    <hr class="my-4">
-                    <p class="lead">
-                        <strong>Flight</strong><br> Our actual flight time is approximately one to one and a half hours averaging closer to one and a half hours and we suggest
-                    to allow three to three and a half hours for the entire adventure. 
-                    <hr class="my-4">
-                    <p class="lead">
-                        <strong>Participation</strong> We encourage all of our guests, if they wish, to participate in both the inflation and deflation of the balloon. We have found it adds greatly to the
-                    fun of the entire ballooning experience.
-                </p>
+                        <strong>Weather</strong><br> High winds and/or inclement weather prevent us from flying. We ask all our guests to contact us in the early afternoon prior to their scheduled flight between 12:00 noon and 2:00 p.m. to verify that
+                        the forecasted weather conditions will allow their balloon flight.
+                        <hr class="my-4">
+                        <p class="lead">
+                            <strong>Flight</strong><br> Our actual flight time is approximately one to one and a half hours averaging closer to one and a half hours and we suggest to allow three to three and a half hours for the entire adventure.
+                            <hr class="my-4">
+                            <p class="lead">
+                                <strong>Participation</strong> We encourage all of our guests, if they wish, to participate in both the inflation and deflation of the balloon. We have found it adds greatly to the fun of the entire ballooning experience.
+                            </p>
             </div>
         </div>
     </div>
@@ -200,10 +213,10 @@
         <h2>We’d love to hear from you</h2>
         <div class="row">
             <div class="col-md-6 col-md-offset col-xs-6 col-lg-6">
-                <p class = "contact-info"><i class="material-icons">directions</i> SHABR, Inc. 1234 Shabr Road Somewhere, OT 80013</p>
+                <p class="contact-info"><i class="material-icons">directions</i> SHABR, Inc. 1234 Shabr Road Somewhere, OT 80013</p>
             </div>
             <div class="col-md-6 col-xs-6 col-lg-6">
-                <p class ="contact-info"><i class="material-icons">local_phone</i> (555) 555-1234</p>
+                <p class="contact-info"><i class="material-icons">local_phone</i> (555) 555-1234</p>
             </div>
         </div>
     </div>

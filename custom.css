@@ -25,6 +25,22 @@
   text-align: center;
  }
 
+#home {
+ text-align:center;
+ 
+}
+
+#home h1 {
+ font-family: 'Zeyada', cursive;
+  font-size: 7vw;
+  padding-top: 30px;
+}
+
+#home p {
+ font-size:3vw;
+ font-family: 'Gugi', cursive;
+}
+
  #landing h1 {
   font-family: 'Mr Dafoe', cursive;
   font-size: 15vw;
@@ -37,7 +53,10 @@
 
  #info {
   margin: auto;
+  
  }
+ 
+ 
 
  #info h1 {
   font-family: 'Zeyada', cursive;
