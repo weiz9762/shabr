@@ -8,18 +8,22 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
     <!--custom-->
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe|Zeyada|Gugi" rel="stylesheet">
 
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.js"></script>
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
     <script src="script.js"></script>
 </head>
 
@@ -49,13 +53,12 @@
                     <a class="nav-link" href="#testimonials">Testimonials</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#testimonyInput">Testimonial Input</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
 
@@ -68,16 +71,16 @@
         </div>
     </header>
 
-    <div id="home" >
-       
-            <h1>Fun for Everyone</h1>
-            <p>Come make a new memory with us. There's nothing else like it.</p>
-            <p>Fun for both adults and kids. All are welcome! :)</p>
-            <p>Afraid of heights? You won't be after you slow-dance with the sky.</p>
+    <div id="home">
+
+        <h1>Fun for Everyone</h1>
+        <p>Come make a new memory with us. There's nothing else like it.</p>
+        <p>Fun for both adults and kids. All are welcome! :)</p>
+        <p>Afraid of heights? You won't be after you slow-dance with the sky.</p>
     </div>
 
 
-    <div class ="bg"></div>
+    <div class="bg"></div>
     <div class="container">
         <div class="row">
             <div class="jumbotron" id="info">
@@ -132,7 +135,7 @@
     <div class="container" id="testimonials">
         <h1>Testimonials</h1>
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-            <div class="carousel-inner w-100" role="listbox">
+            <div id='slideshow' class="carousel-inner w-100" role="listbox">
                 <div class="carousel-item row no-gutters active">
                     <div class="card-deck">
                         <div class="card">
@@ -205,6 +208,10 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+        </div>
+        <div id='testimonyInput'>
+            <p>Type your testimony here in quotes like this: <strong>"Sample Text"</strong></p>
+            <input id='testimonialComment'><button type="button" id='submitBtn' class="btn btn-default btn-sm">Send</button>
         </div>
     </div>
 
