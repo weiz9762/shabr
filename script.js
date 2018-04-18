@@ -10,6 +10,7 @@ $(function() {
         messagingSenderId: "531181915769"
     };
     firebase.initializeApp(config);
+    
 
     function updateReceiver(received) {
         var startAnew;
@@ -169,7 +170,6 @@ $(function() {
             testimonial.email = user.email;
             testimonial.message = testimonialMessage;
             fb.child(user.uid).set(testimonial);
-            fb.on('value', updateReceived);
         });
     }
 });
