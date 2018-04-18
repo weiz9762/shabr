@@ -170,6 +170,7 @@ $(function() {
             testimonial.email = user.email;
             testimonial.message = testimonialMessage;
             fb.child(user.uid).set(testimonial);
+            window.location.reload(true);
         });
     }
 });
